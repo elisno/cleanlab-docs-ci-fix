@@ -54,6 +54,7 @@ jobs:
         with:
           # deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           # publish_branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: cleanlab-docs
           keep_files: true
           exclude_assets: ""
