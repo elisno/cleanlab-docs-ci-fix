@@ -11,10 +11,10 @@ on:
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
 
 jobs:
   deploy:
@@ -62,7 +62,7 @@ jobs:
           # publish_branch: master
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: cleanlab-docs
-          publish_branch: gh-pages
+          publish_branch: main
           keep_files: true
           exclude_assets: ""
 
